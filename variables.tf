@@ -29,15 +29,20 @@ variable "az_count" {
 
 
 variable "database_name" {
+  type = string
   # default = ""
 }
 
 variable "database_username" {
-  default = "testAdmin"
-  nullable = false
+  type        = string
+  default     = "testAdmin"
+  nullable    = false
+  description = "The master user name for the database"
 }
 
 variable "database_password" {
-  nullable  = false
-  sensitive = true
+  type        = string
+  nullable    = false
+  sensitive   = true
+  description = "The (master) password for the database master user can include any printable ASCII character except /, ', \", @, or a space. For Oracle, & is an additional character limitation."
 }
