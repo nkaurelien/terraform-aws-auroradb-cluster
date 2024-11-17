@@ -1,0 +1,23 @@
+Apply complete! Resources: 14 added, 0 changed, 0 destroyed.
+
+Outputs:
+
+cache_arn = "arn:aws:elasticache:us-west-2:122610479289:serverlesscache:cache-for-myauroracluster"
+cache_endpoint = tolist([
+  {
+    "address" = "cache-for-myauroracluster-35vdyp.serverless.usw2.cache.amazonaws.com"
+    "port" = 6379
+  },
+])
+cache_id = "cache-for-myauroracluster"
+cache_reader_endpoint = tolist([
+  {
+    "address" = "cache-for-myauroracluster-35vdyp.serverless.usw2.cache.amazonaws.com"
+    "port" = 6380
+  },
+])
+db_subnet_group_name = "myauroracluster-subnet-group"
+rds_cluster_endpoint = "myauroracluster.cluster-cdamugo6ksbv.us-west-2.rds.amazonaws.com"
+rds_cluster_instance_endpoint = "myauroracluster-instance.cdamugo6ksbv.us-west-2.rds.amazonaws.com"
+rds_cluster_reader_endpoint = "myauroracluster.cluster-ro-cdamugo6ksbv.us-west-2.rds.amazonaws.com"
+security_group_id = "sg-0dd337008052318dd"
